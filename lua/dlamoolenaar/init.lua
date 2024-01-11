@@ -15,3 +15,5 @@ require("rose-pine").setup({
 })
 
 vim.cmd("colorscheme rose-pine")
+vim.opt.hlsearch = true
+vim.opt.wrap = false 
