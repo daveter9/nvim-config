@@ -7,9 +7,9 @@ require("lazy").setup({
 		tag = '0.1.5',
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
-	{ 'rose-pine/neovim', name = 'rose-pine' }
+	{ 'rose-pine/neovim', name = 'rose-pine' },
+	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
 })
-
 require("rose-pine").setup({
 	variant = "main"
 })
