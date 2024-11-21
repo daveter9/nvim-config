@@ -1,5 +1,6 @@
 require("dlamoolenaar.load_lazy")
 require("dlamoolenaar.remap")
+require("dlamoolenaar.dbui")
 
 require("lazy").setup({
 	-- Finders
@@ -30,7 +31,11 @@ require("rose-pine").setup({
 	variant = "main"
 })
 
--- here you can setup the language servers
 vim.cmd("colorscheme rose-pine")
 vim.opt.hlsearch = true
 vim.opt.wrap = false 
+
+-- nvim lsp settings
+vim.lsp.set_log_level('debug')
+vim.opt.signcolumn = 'yes' -- reserve a whitespace for diagnostic signs in the gutter
+
