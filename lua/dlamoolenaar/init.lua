@@ -26,7 +26,6 @@ require("lazy").setup({
 	    dependencies = { 'nvim-tree/nvim-web-devicons' }
 	}
 })
-
 require("rose-pine").setup({
 	variant = "main"
 })
