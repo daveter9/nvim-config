@@ -3,7 +3,9 @@ vim.g.db_ui_table_helpers = {
         ['Show Schema'] = 'PRAGMA table_info({table});'
     },
     mysql = {
-        ['List'] = 'SELECT *\nFROM `{schema}`.`{table}`\nLIMIT 5\n;'
+        ['List'] = 'SELECT *\nFROM `{schema}`.`{table}`\nLIMIT 5\n;',
+        ['Columns'] = 'DESCRIBE `{schema}`.`{table}`;',
+        ['Drop'] = 'DROP TABLE `{schema}`.`{table}`;'
     }
 }
 
